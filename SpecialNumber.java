@@ -11,7 +11,7 @@ public class SpecialNumber {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number ");
+        System.out.println("Enter the positive number ");
         int num=sc.nextInt();
         int sum=0;
         int number=num;
@@ -26,5 +26,6 @@ public class SpecialNumber {
             System.out.println(number+" it is not special number");
 
         }
+        sc.close();
     }
 }
