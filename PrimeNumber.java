@@ -32,9 +32,4 @@ public class PrimeNumber {
     // TIME COMPLEXITY OF THIS CODE IS O(ROOT N)
 }
 
-public class GoTO{
-    GoTo(int speed){
-        System.out.println("go eith"+speed);
-    }
-    GoTo(St)
-}
+
