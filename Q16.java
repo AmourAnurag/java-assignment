@@ -1,6 +1,14 @@
 import java.util.*;
 
 public class Q16 {
+    static void printarray(int arr[][]) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++)
+                System.out.print(arr[i][j] + " ");
+            System.out.println();
+        }
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the element : ");
@@ -10,11 +18,7 @@ public class Q16 {
                 arr[i][j] = sc.nextInt();
         }
         System.out.println("Matrix Enter by You ");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++)
-                System.out.print(arr[i][j] + " ");
-            System.out.println();
-        }
+        printarray(arr);
 
         System.out.println("Enter 1 for sum of each row");
         System.out.println("Enter 2 for sum of each column");
@@ -51,23 +55,22 @@ public class Q16 {
                 break;
             case 4:
                 int sumof2 = 0;
-                
                 for (int i = 0; i < 3; i++) {
-                
-                        sumof2+=arr[i][2-i];
-                        
+                    sumof2 += arr[i][2 - i];
                 }
                 System.out.println("Sum of  second diagonal : " + sumof2);
                 break;
             case 5:
-                int sumof2 = 0;
-                
                 for (int i = 0; i < 3; i++) {
-                
-                        sumof2+=arr[i][2-i];
-                        
+                    for (int j = 0; j <= i; j++){
+                        int tmp=arr[i][j];
+                        arr[i][j]=arr[j][i];
+                        arr[j][i]=tmp;
+                    }
+                         
+                  
                 }
-                System.out.println("Sum of  second diagonal : " + sumof2);
+                printarray(arr);
                 break;
 
             default:
