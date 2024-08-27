@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Q16 {
-    static void printarray(int arr[][]) {
+    public static void printarray(int arr[][]) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++)
                 System.out.print(arr[i][j] + " ");
