@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Q29 {
     public static void main(String args[]) {
         int row, col;
-        boolean isboolean = true;
+       
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the rows of matrix");
         row = sc.nextInt();
@@ -53,6 +53,7 @@ public class Q29 {
             }
 
         }
+        sc.close();
         System.out.println("Yes matrix is magic");
     }
 }
